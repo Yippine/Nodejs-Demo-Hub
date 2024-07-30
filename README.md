@@ -6,6 +6,8 @@
 
 歡迎來到 Node.js ATM Project！這是一個創新的自動提款機（ATM）模擬系統，結合了傳統銀行業務與現代技術。我們的專案模擬了基本的 ATM 功能，為使用者提供整合 INI 文件的金融服務體驗。
 
+https://github.com/user-attachments/assets/d82d977e-ea97-48e9-8438-e57b2601ae64
+
 ### 🌟 主要特色
 - 使用 Node.js 構建的輕量級後端
 - 基於 INI 文件的簡單有效的資料儲存
