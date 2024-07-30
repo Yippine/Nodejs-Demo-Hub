@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Operations 自動提款機操作</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="bg-white bg-opacity-90 rounded-xl shadow-2xl p-8 w-full max-w-xl fade-in">
+      <h1 class="text-4xl font-bold text-wood-dark mb-8 text-center">
+        ATM Operations<br />
+        自動提款機操作
+      </h1>
+
+      <div class="space-y-6">
+        <div class="flex justify-between items-center">
+          <span class="text-lg text-wood-dark">Current Balance 當前餘額：</span>
+          <span id="balance" class="text-2xl font-bold text-wood-dark">Loading 加載中...</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="text-lg text-wood-dark">Transaction Limit 交易限額：</span>
+          <span id="transactionLimit" class="text-2xl font-bold text-wood-dark">Loading 加載中...</span>
+        </div>
+
+        <input
+          type="number"
+          id="amount"
+          placeholder="Amount 金額"
+          class="w-full p-3 text-lg border border-wood rounded-lg focus:outline-none focus:ring-2 focus:ring-wood-dark transition duration-200 bg-wood-light text-wood-dark placeholder-wood"
+        />
+
+        <input
+          type="text"
+          id="targetAccount"
+          placeholder="Target Account (for transfer) 目標帳戶（用於轉帳）"
+          class="w-full p-3 text-lg border border-wood rounded-lg focus:outline-none focus:ring-2 focus:ring-wood-dark transition duration-200 bg-wood-light text-wood-dark placeholder-wood"
+        />
+
+        <div class="flex justify-between space-x-4">
+          <button onclick="withdraw()" class="flex-1 py-3 bg-wood text-white text-lg font-semibold rounded-lg hover:bg-wood-dark transition duration-300 scale-up">Withdraw 提款</button>
+          <button onclick="deposit()" class="flex-1 py-3 bg-wood text-white text-lg font-semibold rounded-lg hover:bg-wood-dark transition duration-300 scale-up">Deposit 存款</button>
+          <button onclick="transfer()" class="flex-1 py-3 bg-wood text-white text-lg font-semibold rounded-lg hover:bg-wood-dark transition duration-300 scale-up">Transfer 轉帳</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

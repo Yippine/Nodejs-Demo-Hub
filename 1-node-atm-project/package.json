@@ -1,0 +1,14 @@
+{
+    "name":"node-atm-project",
+    "version":"1.0.0",
+    "description":"A simple ATM application using Node.js and INI files",
+    "main":"src/server.js",
+    "scripts":{
+       "start":"node src/server.js"
+    },
+    "dependencies":{
+       "express":"^4.17.1",
+       "body-parser":"^1.19.0",
+       "ini":"^2.0.0"
+    }
+}
